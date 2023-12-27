@@ -1,0 +1,182 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Vehicle App</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css"
+		media="screen, projection">
+	<style type="text/css" media="screen">
+		html {
+			scroll-behavior: smooth;
+		}
+		.img-border {
+			box-shadow: 0 0 5px 5px #ebebeb;
+			margin-top: 3px;
+			margin-bottom: 3px;
+		}
+
+		p,
+		table,
+		hr,
+		.box {
+			margin-bottom: 25px;
+		}
+
+		.box p {
+			margin-bottom: 10px;
+		}
+
+		.img-fluid {
+			max-width: 100%;
+		}
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+
+		<h3 class="center alt">&ldquo;Vehicle App Backend&rdquo; Documentation by &ldquo;Chirag Vadukia&rdquo; v1.0</h3>
+
+		<hr>
+
+		<h1 class="center">&ldquo;Vehicle App Backend&rdquo;</h1>
+
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+						Created: 22/07/2021<br>
+						By: Chirag Vadukia<br>
+						<!--Email:--> <a href="mailto:youremail@yourdomain.com">chirag.vadukia@gmail.com</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->
+
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my theme. If you have any questions that are
+					beyond the scope of this help file, please feel free to email via my user page contact form <a
+						href="https://codecanyon.net/user/chiragvadukia">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+
+		<hr>
+
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="">
+			<li><a href="#one">Unzip the packaget</a></li>
+			<li><a href="#two">Upload the Project folders and files to your server</a></li>
+			<li><a href="#three">Set your base URL</a></li>
+			<li><a href="#four">phpMyAdmin — How to import or restore a database or table</a>
+			<li><a href="#five">Set your database settings</a></li>
+			<li><a href="#seven"> Create api url for application</a></li>
+		</ol>
+		<hr>
+
+		<h3 id="one"><strong>1) Unzip the packaget </strong> - <a href="#toc">top</a></h3>
+		<p>Unzip the package you purchasing.</p>
+
+		<p></p>
+		<hr>
+
+
+		<h3 id="two"><strong>2) Upload the Project folders and files to your server</strong> - <a href="#toc">top</a>
+		</h3>
+
+		<p>Upload the CodeIgniter folders and files to your server. Normally the index.php file will be at your root.
+		</p>
+
+		<p></p>
+		<hr>
+
+
+
+		<h3 id="three"><strong>3) Set your base URLs</strong> - <a href="#toc">top</a></h3>
+
+		<p>Open the application/config/config.php file with a text editor and set your base URL. If you intend to use
+			encryption or sessions, set your encryption key.</p>
+
+		<img src="assets/images/baseurl.PNG" alt="Header Path" class="img-fluid" />
+		<p></p>
+
+		<p></p>
+		<hr>
+
+
+		<h3 id="four"><strong>4) phpMyAdmin — How to import or restore a database or table</strong> - <a
+				href="#toc">top</a></h3>
+
+		<p>Create a new databse in phpmyadmin and import .sql file in project folder</p>
+		<div class="solvvy-solution">
+			<ol>
+				<li>Log into <a href="#">phpMyAdmin</a>.
+					<dl>
+						<dd><img src="assets/images/2018-05_mysql_exporting_database_01.png" alt="" height=""></dd>
+					</dl>
+				</li>
+				<li>Select the destination database on the left pane.
+					<dl>
+						<dd><img src="assets/images/2018-05_mysql_importing_database_01.png" alt="" height=""></dd>
+					</dl>
+				</li>
+				<li>Click on the <span class="text-object">Import</span> tab in the top center&nbsp;pane.
+					<dl>
+						<dd><img class="img-border" src="assets/images/phpMyAdmin_Import.png" alt="phpMyAdmin_import"
+								height=""></dd>
+					</dl>
+				</li>
+				<li>Under the <span class="text-section">File to import</span> section, click <strong>Browse</strong>
+					and locate the file with the .sql extension you wish to import.</li>
+				<li>Check or uncheck the boxes for 'Partial import' and 'Other options'.</li>
+				<li>From the <span class="text-object">Format</span> dropdown menu choose 'SQL'.</li>
+				<li>Click the <strong>Go</strong> button at the bottom to import the database.</li>
+			</ol>
+			<p>If you imported a database, all tables will show when selecting the database in the left panel of
+				phpMyAdmin.</p>
+			<p>If you imported a table, the newly-imported table will appear in the list of tables.</p>
+		</div>
+
+		<p></p>
+
+		<hr>
+
+
+
+		<h3 id="five"><strong>5) Set your database settings</strong> - <a href="#toc">top</a></h3>
+
+		<p>If you intend to use a database, open the application/config/database.php file with a text editor and set
+			your database settings.</p>
+
+		<img src="assets/images/database.PNG" alt="Project Structure" class="img-fluid" />
+		<p></p>
+
+		<hr>	
+
+		<h3 id="seven"><strong>6) Create api url for application</strong> - <a href="#toc">top</a></h3>
+		<p>You have to change domain in url of api as per your domain name.<br />
+			for example: "http://mydomain.com/index.php/Vehicle_api/anyapiname"</p>
+		<p></p>
+		<hr>
+		<p>Admin Login Detail</p>
+		<p><b>Username:</b> admin</br>
+		<b>Password:</b> admin123</p>
+
+		<p>If you are exploring CodeIgniter for the very first time, you should start by reading the <a
+				href="https://codeigniter.com/userguide3/installation/index.html">User Guide</a>.</p>
+		<p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you
+			if you have any questions relating to this app. No guarantees, but I'll do my best to assist. If you have a
+			more general question relating to the app, you might ask your question."</p>
+
+		<p class="append-bottom alt large"><strong>Chirag Vadukia</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+
+		<hr class="space">
+	</div><!-- end div .container -->
+	
+</body>
+
+</html>
